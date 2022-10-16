@@ -1,0 +1,45 @@
+body {
+    background: rgba(211, 211, 211, 0.55);
+}
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.avatar-container {
+    padding: 50px;
+}
+.center {
+    margin: 0 auto;
+}
+.card {
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    margin-top: 30px;
+    background: #fff;
+}
+.header {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+.darkgray {
+    color: #3e3e3e;
+}
+.gray {
+    color: gray;
+}
+.max-width {
+    max-width: 750px;
+}
+.text-align-right {
+    text-align: right;
+}
+.font-italic {
+    font-style: italic;
+}
