@@ -1,0 +1,30 @@
+version: '3.0'
+
+services:
+  postgres:
+    container_name: postgres
+    image: postgres:12
+    environment:
+      PG_DATA: /var/lib/postgresql/data
+      POSTGRES_DB: ek-blog-docker
+      POSTGRES_USER: postgres1
+      POSTGRES_PASSWORD: root
+    ports:
+      - 5433:5432
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    restart: always
+
+  redis-server:
+    container_name: redis-server
+    image: redis:alpine
+    restart: always
+    ports:
+#      - 6379:6379
+      - 5003:6379
+    volumes:
+      - redisdata:/var/lib/redis/data
+
+volumes:
+  pgdata:
+  redisdata:
